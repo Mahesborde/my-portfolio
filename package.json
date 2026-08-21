@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "git push origin :gh-pages 2>NUL & git subtree push --prefix dist origin gh-pages",
     "preview": "vite preview"
   },
   "dependencies": {
