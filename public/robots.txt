@@ -3,5 +3,5 @@ User-agent: *
 Allow: /
 
 # Host & Sitemap Directive
-Host: https://Mahesborde.github.io/my-portfolio
-Sitemap: https://Mahesborde.github.io/my-portfolio/sitemap.xml
+Host: https://maheshborde.vercel.app
+Sitemap: https://maheshborde.vercel.app/sitemap.xml

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://Mahesborde.github.io/my-portfolio",
+  "homepage": "https://maheshborde.vercel.app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
