@@ -36,10 +36,10 @@ const Navbar = ({ activeSection, setActiveSection }) => {
   };
 
   return (
-    <>
+    <header className="contents">
       {/* Desktop Floating Navbar */}
       <div className="fixed top-5 left-0 right-0 z-50 hidden md:flex justify-center pointer-events-none px-6">
-        <nav className="relative rounded-full px-3 py-1.5 flex items-center gap-1 border pointer-events-auto shadow-2xl transition-all duration-300 bg-[#0F0E0E]/70 backdrop-blur-xl border-white/10">
+        <nav aria-label="Main Navigation" className="relative rounded-full px-3 py-1.5 flex items-center gap-1 border pointer-events-auto shadow-2xl transition-all duration-300 bg-[#0F0E0E]/70 backdrop-blur-xl border-white/10">
           
           {/* Animated Border Spin Overlay */}
           <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-full p-[1px]">
@@ -134,7 +134,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
           </div>
         )}
       </nav>
-    </>
+    </header>
   );
 };
 

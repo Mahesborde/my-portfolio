@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host & Sitemap Directive
+Host: https://Mahesborde.github.io/my-portfolio
+Sitemap: https://Mahesborde.github.io/my-portfolio/sitemap.xml

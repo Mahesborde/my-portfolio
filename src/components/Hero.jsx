@@ -143,6 +143,7 @@ const Hero = ({ onOpenResume }) => {
 
         {/* 3D PERSPECTIVE MASSIVE TITLE */}
         <h1 
+          aria-label="Mahesh Borde | Full Stack Developer & IT Engineering Student"
           className="w-full flex flex-col items-center leading-[0.9] text-4xl sm:text-6xl md:text-7xl lg:text-[7vw] font-black tracking-tighter text-white mb-6"
           style={{
             fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -160,6 +161,7 @@ const Hero = ({ onOpenResume }) => {
               href={personal.github} 
               target="_blank" 
               rel="noopener noreferrer" 
+              aria-label="Mahesh Borde GitHub Profile"
               className="p-2 sm:p-3 rounded-full text-white/30 hover:text-[#ff6b00] hover:scale-125 transition-all duration-300 inline-block pointer-events-auto"
               title="GitHub Profile"
             >
@@ -173,6 +175,7 @@ const Hero = ({ onOpenResume }) => {
               href={personal.linkedin} 
               target="_blank" 
               rel="noopener noreferrer" 
+              aria-label="Mahesh Borde LinkedIn Profile"
               className="p-2 sm:p-3 rounded-full text-white/30 hover:text-[#ff6b00] hover:scale-125 transition-all duration-300 inline-block pointer-events-auto"
               title="LinkedIn Profile"
             >
@@ -192,6 +195,7 @@ const Hero = ({ onOpenResume }) => {
 
             <a 
               href={`mailto:${personal.email}`} 
+              aria-label="Send Direct Email to Mahesh Borde"
               className="p-2 sm:p-3 rounded-full text-white/30 hover:text-[#ff6b00] hover:scale-125 transition-all duration-300 inline-block pointer-events-auto"
               title="Send Direct Email"
             >

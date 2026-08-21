@@ -97,11 +97,17 @@ const Projects = () => {
 
       {/* Project Detail Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
+        <div 
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="project-modal-title"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200"
+        >
           <div className="bg-[#141212] border border-[#ff6b00]/40 rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
             
             <button
               onClick={() => setSelectedProject(null)}
+              aria-label="Close project details modal"
               className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
             >
               <X className="w-5 h-5" />
@@ -111,7 +117,7 @@ const Projects = () => {
               {selectedProject.badge}
             </span>
 
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-white mt-4 mb-1">
+            <h3 id="project-modal-title" className="text-2xl sm:text-3xl font-extrabold text-white mt-4 mb-1">
               {selectedProject.title}
             </h3>
             <p className="text-sm font-mono text-[#ff9100] mb-6">{selectedProject.subtitle}</p>

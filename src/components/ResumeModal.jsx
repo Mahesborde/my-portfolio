@@ -12,7 +12,12 @@ const ResumeModal = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200 overflow-y-auto">
+    <div 
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="resume-modal-name"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200 overflow-y-auto"
+    >
       <div className="bg-[#121111] border border-[#ff6b00]/40 rounded-3xl max-w-3xl w-full p-6 sm:p-10 shadow-2xl relative my-8 text-white">
         
         {/* Header Actions */}
@@ -25,6 +30,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
           <div className="flex items-center gap-3">
             <button
               onClick={handlePrint}
+              aria-label="Print or save Mahesh Borde resume as PDF"
               className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold flex items-center gap-2 transition-colors cursor-pointer"
             >
               <Printer className="w-4 h-4 text-[#ff6b00]" />
@@ -33,6 +39,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
 
             <button
               onClick={onClose}
+              aria-label="Close resume modal preview"
               className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
             >
               <X className="w-5 h-5" />
@@ -46,7 +53,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
           {/* Header */}
           <div className="text-center sm:text-left flex flex-col sm:flex-row justify-between items-start gap-4">
             <div>
-              <h1 className="text-3xl font-black tracking-tight text-white">{personal.name}</h1>
+              <h1 id="resume-modal-name" className="text-3xl font-black tracking-tight text-white">{personal.name}</h1>
               <p className="text-base font-semibold text-[#ff6b00] mt-1">{personal.role}</p>
               <p className="text-xs text-white/60 font-mono mt-1">IT Engineering Student • Sanjivani College of Engineering, Kopargaon</p>
             </div>

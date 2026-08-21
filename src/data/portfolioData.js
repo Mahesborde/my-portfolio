@@ -24,7 +24,7 @@ export const portfolioData = {
       { id: "all", label: "All Skills" },
       { id: "aiml", label: "AI & Machine Learning" },
       { id: "frontend", label: "Frontend Engineering" },
-      { id: "backend", label: "Backend & Advanced SQL" },
+      { id: "backend", label: "Backend & Databases" },
       { id: "tools", label: "Tools & Environment" }
     ],
     items: [
@@ -35,16 +35,17 @@ export const portfolioData = {
       { name: "Scikit-Learn & Pandas", category: "aiml", level: 86, icon: "Cpu" },
 
       // Frontend
-      { name: "React.js", category: "frontend", level: 90, icon: "Atom", highlight: true },
-      { name: "JavaScript (ES6+)", category: "frontend", level: 88, icon: "FileCode" },
+      { name: "React.js & Vite", category: "frontend", level: 92, icon: "Atom", highlight: true },
+      { name: "JavaScript (ES6+)", category: "frontend", level: 90, icon: "FileCode", highlight: true },
       { name: "HTML5 & CSS3", category: "frontend", level: 95, icon: "Layout" },
       { name: "Tailwind CSS", category: "frontend", level: 90, icon: "Palette" },
 
       // Backend & Database
+      { name: "Node.js & Express.js", category: "backend", level: 85, icon: "Server", highlight: true },
       { name: "Advanced MySQL / SQL", category: "backend", level: 94, icon: "Database", highlight: true },
-      { name: "Node.js & Express", category: "backend", level: 82, icon: "Server" },
+      { name: "MongoDB & NoSQL", category: "backend", level: 84, icon: "Layers" },
+      { name: "Java & C Programming", category: "backend", level: 88, icon: "Code2" },
       { name: "RESTful API Integration", category: "backend", level: 88, icon: "Webhook" },
-      { name: "Relational Schema Design", category: "backend", level: 90, icon: "Layers" },
 
       // Tools
       { name: "Git & GitHub", category: "tools", level: 90, icon: "GitBranch", highlight: true },

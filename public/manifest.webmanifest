@@ -1,0 +1,17 @@
+{
+  "name": "Mahesh Borde | Full Stack Developer Portfolio",
+  "short_name": "Mahesh Borde",
+  "description": "Official portfolio of Mahesh Borde, an IT Engineering student and aspiring Full Stack Developer skilled in React, JavaScript, Node.js, Python, Java, MySQL, and modern web applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F0E0E",
+  "theme_color": "#0F0E0E",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
